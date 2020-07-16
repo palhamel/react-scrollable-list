@@ -75,18 +75,34 @@ export const ListCard = () => {
 const Card = styled.div`
   position: relative;
   overflow: hidden;
-  width: 300px;
+  width: 340px;
   padding: 1rem 0;
   border-radius: 1rem;
   background: #f5f5fd;
   box-shadow: 0 4px 15px ${rgba("black", 0.05)};
 `;
 
+const TextHeader = styled.p`
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: ${rgba("blue", 0.55)};
+  padding: 3px 0 10px 20px;
+  margin: 0;
+  border-bottom: 2px solid #e6e6fa;
+`;
+
 const DetailsContainer = styled.div`
   display: flex;
   align-items: center;
   width: 300px;
+  padding: 0 10px 0 10px;;
   border-bottom: 1px solid ${rgba("black", 0.05)};
+  border-radius: 0.2rem;
+  &:hover {
+    cursor: pointer;
+    background: ${rgba("blue", 0.05)};
+    border-bottom: 1px solid ${rgba("black", 0.00)};
+  }
 `;
 
 const Item = styled.div`
@@ -117,7 +133,7 @@ const ItemSubtitle = styled.div`
 
 const ItemLikes = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   font-size: 0.75rem;
   color: ${rgba("black", 0.38)};
   & > i {
@@ -127,10 +143,3 @@ const ItemLikes = styled.div`
   }
 `;
 
-const TextHeader = styled.p`
-  font-size: 1rem;
-  font-weight: 700;
-  color: ${rgba("blue", 0.75)};
-  padding: 3px 0 5px 20px;
-  border-bottom: 2px solid #e6e6fa;
-`;
