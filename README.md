@@ -1,12 +1,38 @@
-# Technigo React Starter App
+## A sortable component in React
 
-This app has been generated using `create-react-app`, then cleaned up a little so we have a project with just the elements we need to get started.
 
-Add components in the `src` folder and use them in `src/app.js` to get started.
+* Setup a React app
+* Install dependencies
+* Generate Tailwind.js file
+* Generate Tailwind.js file
+* Build: and Watch: CSS scripts
+* Built a simple component - style with Tailwind
 
-## Usage
+* Pixabay API - fetch images
+* API documentation - Pixabay
+* .env for API Key - environment variables
+* Setup React with useEffect & useState
+* Make image card component
+* fetch and .map
+* Turn string info to array for map
+* Deploy
 
-1. Download & extract the [latest release](https://github.com/Technigo/react-starter/releases/latest) from GitHub
-1. Open the directory in the terminal: `cd /path/to/react-starter`
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+
+#### Tech used: 
+- TailwindCSS, PostCSS-CLI, Autoprefixer, PurgeCSS
+- VS Code
+
+
+## View it live - the website:
+
+
+
+
+
+
+
+
+
+-----------------
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
