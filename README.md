@@ -1,11 +1,14 @@
 ## A sortable component in React
 
 
-* A sortable list in React
+* A sortable list in React using react-sortablejs
+* Built with styled components
+* Icon images are fetched on refresh
 
 
 #### Tech used: 
 - styled components, polished, react-sortablejs
+- Google Material design icons
 - VS Code
 
 

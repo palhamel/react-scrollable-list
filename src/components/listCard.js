@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { rgba } from "polished";
 import { ReactSortable } from "react-sortablejs";
-// import image from 'https://placeimg.com/50/50/people';
 
 export const ListCard = () => {
   const [state, setState] = useState([
@@ -52,6 +51,7 @@ export const ListCard = () => {
           <Item key={item.id}>
             <DetailsContainer>
               <ItemImage src={`https://placeimg.com/50/50/${item.imageType}`} />
+              {/* Leave this for future imports: */}
               {/* <ItemImage src={require("./placeimg_50_50_people.jpg")} /> */}
               {/* <ItemImage
               src={
@@ -131,9 +131,6 @@ const TextHeader = styled.p`
   font-size: 1rem;
   font-weight: 700;
   color: ${rgba("blue", 0.75)};
-  /* background-color: black; */
   padding: 3px 0 5px 20px;
-  /* border-bottom: 2px solid ${rgba("black", 0.05)}; */
   border-bottom: 2px solid #e6e6fa;
-
 `;
