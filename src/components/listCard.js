@@ -3,37 +3,52 @@ import styled from "styled-components";
 import { rgba } from "polished";
 import { ReactSortable } from "react-sortablejs";
 
-export const Cardcontainer = () => {
+export const ListCard = () => {
   const [state, setState] = useState([
-    { id: 1, title: "Linnea", subtitle: "Sous chef", image: "https://placeimg.com/50/50/people", likes: 565 },
+    {
+      id: 1,
+      title: "Linnea",
+      subtitle: "Sous chef",
+      image: "https://placeimg.com/50/50/people",
+      likes: 565,
+    },
     { id: 2, title: "Bo", subtitle: "Digital prophet", likes: 205 },
-    { id: 3, title: "Caroline", subtitle: "Chief Amazement Officer", likes: 131 },
-    { id: 4, title: "Gustav", subtitle: "Genius - service technician", likes: 65 },
+    {
+      id: 3,
+      title: "Caroline",
+      subtitle: "Chief Amazement Officer",
+      likes: 131,
+    },
+    {
+      id: 4,
+      title: "Gustav",
+      subtitle: "Genius - service technician",
+      likes: 65,
+    },
     { id: 5, title: "Daniel", subtitle: "Crayon Evangelist", likes: 585 },
-    { id: 6, title: "Anneli", subtitle: "Creator of opportunities", likes: 91 }
+    { id: 6, title: "Anneli", subtitle: "Creator of opportunities", likes: 91 },
   ]);
 
   return (
     <Card>
+      <TextHeader>Try rearrange the list:</TextHeader>
       <ReactSortable list={state} setList={setState}>
-        {state.map(item => (
+        {state.map((item) => (
           <Item key={item.id}>
-            <ItemImage
-              src={
-                require('./placeimg_50_50_people.jpg')} />
-            {/* <ItemImage
+            <DetailsContainer>
+              <ItemImage src={require("./placeimg_50_50_people.jpg")} />
+              {/* <ItemImage
               src={
                 require(`/${item.title}.png`)} /> */}
-            <div style={{ flex: 1 }}>
-              <ItemTitle>{item.title}</ItemTitle>
-              <ItemSubtitle>
-                {item.subtitle}
-              </ItemSubtitle>
-            </div>    
-            <ItemLikes>
-              <i className="material-icons-outlined">favorite</i>
-              <span>{item.likes}</span>
-            </ItemLikes>
+              <div style={{ flex: 1 }}>
+                <ItemTitle>{item.title}</ItemTitle>
+                <ItemSubtitle>{item.subtitle}</ItemSubtitle>
+              </div>
+              <ItemLikes>
+                <i className="material-icons-outlined">favorite</i>
+                <span>{item.likes}</span>
+              </ItemLikes>
+            </DetailsContainer>
           </Item>
         ))}
       </ReactSortable>
@@ -47,8 +62,15 @@ const Card = styled.div`
   width: 300px;
   padding: 1rem 0;
   border-radius: 1rem;
-  background: white;
+  background: #f5f5fd;
   box-shadow: 0 4px 15px ${rgba("black", 0.05)};
+`;
+
+const DetailsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border-bottom: 1px solid ${rgba("black", 0.05)};
 `;
 
 const Item = styled.div`
@@ -87,4 +109,11 @@ const ItemLikes = styled.div`
     font-size: 1rem;
     color: #fe0f7c;
   }
+`;
+
+const TextHeader = styled.text`
+  font-size: 1rem;
+  font-weight: 700;
+  color: ${rgba("blue", 0.85)};
+  padding: 10px 0 0 20px;
 `;

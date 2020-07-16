@@ -5,7 +5,8 @@
 
 
 #### Tech used: 
-- TailwindCSS, PostCSS-CLI, Autoprefixer, PurgeCSS
+- styled components, polished, react-sortablejs
+- TailwindCSS
 - VS Code
 
 

@@ -1,11 +1,13 @@
 import React from 'react'
-import { Cardcontainer } from './components/cardContainer'
+import { ListCard } from './components/listCard'
 
 
 export const App = () => {
   return (
-    <div>
-      <Cardcontainer />
+    <div className="container">
+      <div>
+´        <ListCard className="card" />
+      </div>
     </div>
   )
 }
