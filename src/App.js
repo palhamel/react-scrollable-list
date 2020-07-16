@@ -1,12 +1,12 @@
 import React from 'react'
-import { Card } from './components/card'
+import { Cardcontainer } from './components/cardContainer'
 
 
 export const App = () => {
   return (
     <div>
       Find me in src/app.js!
-      <Card />
+      <Cardcontainer />
     </div>
   )
 }
