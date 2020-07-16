@@ -19,10 +19,10 @@ h1 {
 
 .container {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: auto;
 }
 
-.card {
-  align-items: center;
-
+.card-container {
+  margin-top: 80px;
 }

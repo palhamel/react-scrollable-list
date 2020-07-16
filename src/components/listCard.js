@@ -111,9 +111,13 @@ const ItemLikes = styled.div`
   }
 `;
 
-const TextHeader = styled.text`
+const TextHeader = styled.p`
   font-size: 1rem;
   font-weight: 700;
-  color: ${rgba("blue", 0.85)};
-  padding: 10px 0 0 20px;
+  color: ${rgba("blue", 0.75)};
+  /* background-color: black; */
+  padding: 3px 0 5px 20px;
+  /* border-bottom: 2px solid ${rgba("black", 0.05)}; */
+  border-bottom: 2px solid #e6e6fa;
+
 `;
