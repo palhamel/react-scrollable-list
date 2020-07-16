@@ -31,10 +31,7 @@ export const Cardcontainer = () => {
               </ItemSubtitle>
             </div>    
             <ItemLikes>
-              <i 
-                className="material-icons-outline">
-                favorite <span>♥️</span>
-              </i>
+              <i className="material-icons-outlined">favorite</i>
               <span>{item.likes}</span>
             </ItemLikes>
           </Item>
