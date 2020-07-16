@@ -6,7 +6,6 @@
 
 #### Tech used: 
 - styled components, polished, react-sortablejs
-- TailwindCSS
 - VS Code
 
 
