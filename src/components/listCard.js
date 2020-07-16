@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { rgba } from "polished";
 import { ReactSortable } from "react-sortablejs";
+// import image from 'https://placeimg.com/50/50/people';
 
 export const ListCard = () => {
   const [state, setState] = useState([
@@ -9,7 +10,7 @@ export const ListCard = () => {
       id: 1,
       title: "Linnea",
       subtitle: "Sous chef",
-      image: "https://placeimg.com/50/50/people",
+      imageType: "animals",
       likes: 565,
     },
     { id: 2, title: "Bo", subtitle: "Digital prophet", likes: 205 },
@@ -17,16 +18,30 @@ export const ListCard = () => {
       id: 3,
       title: "Caroline",
       subtitle: "Chief Amazement Officer",
+      imageType: "nature",
       likes: 131,
     },
     {
       id: 4,
       title: "Gustav",
       subtitle: "Genius - service technician",
+      imageType: "tech",
       likes: 65,
     },
-    { id: 5, title: "Daniel", subtitle: "Crayon Evangelist", likes: 585 },
-    { id: 6, title: "Anneli", subtitle: "Creator of opportunities", likes: 91 },
+    {
+      id: 5,
+      title: "Daniel",
+      subtitle: "Crayon Evangelist",
+      imageType: "people",
+      likes: 585,
+    },
+    {
+      id: 6,
+      title: "Anneli",
+      subtitle: "Creator of opportunities",
+      imageType: "any/grayscale",
+      likes: 91,
+    },
   ]);
 
   return (
@@ -36,7 +51,8 @@ export const ListCard = () => {
         {state.map((item) => (
           <Item key={item.id}>
             <DetailsContainer>
-              <ItemImage src={require("./placeimg_50_50_people.jpg")} />
+              <ItemImage src={`https://placeimg.com/50/50/${item.imageType}`} />
+              {/* <ItemImage src={require("./placeimg_50_50_people.jpg")} /> */}
               {/* <ItemImage
               src={
                 require(`/${item.title}.png`)} /> */}
