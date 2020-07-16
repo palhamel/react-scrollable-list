@@ -5,12 +5,12 @@ import { ReactSortable } from "react-sortablejs";
 
 export const Cardcontainer = () => {
   const [state, setState] = useState([
-    { id: 1, title: "Claudine", subtitle: "Sous chef", likes: 565 },
-    { id: 2, title: "Ron", subtitle: "Digital prophet", likes: 205 },
-    { id: 3, title: "Millie", subtitle: "Chief Amazement Officer", likes: 131 },
-    { id: 4, title: "Jodee", subtitle: "Genius - service technician", likes: 65 },
-    { id: 5, title: "Lanell", subtitle: "Crayon Evangelist", likes: 585 },
-    { id: 6, title: "Karrie", subtitle: "Creator of opportunities", likes: 91 }
+    { id: 1, title: "Linnea", subtitle: "Sous chef", image: "https://placeimg.com/50/50/people", likes: 565 },
+    { id: 2, title: "Bo", subtitle: "Digital prophet", likes: 205 },
+    { id: 3, title: "Caroline", subtitle: "Chief Amazement Officer", likes: 131 },
+    { id: 4, title: "Gustav", subtitle: "Genius - service technician", likes: 65 },
+    { id: 5, title: "Daniel", subtitle: "Crayon Evangelist", likes: 585 },
+    { id: 6, title: "Anneli", subtitle: "Creator of opportunities", likes: 91 }
   ]);
 
   return (
@@ -18,9 +18,9 @@ export const Cardcontainer = () => {
       <ReactSortable list={state} setList={setState}>
         {state.map(item => (
           <Item key={item.id}>
-            {/* <ItemImage
+            <ItemImage
               src={
-                require(`/${item.title}.png`)} /> */}
+                require('./placeimg_50_50_people.jpg')} />
             {/* <ItemImage
               src={
                 require(`/${item.title}.png`)} /> */}
